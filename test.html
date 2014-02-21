@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>html2json Test Suite</title>
+
+
+    <script src="js/jquery-1.6.4.min.js"></script>
+    <script src="js/htmlparser.js"></script>
+    <script src="js/html2json.js"></script>
+
+ 
+  </head>
+  <body>
+    <h1 id="nodeunit-header">html2json Test Suite (open console)</h1>
+    <script>
+	
+	
+    var html = '<div class="asd"><p><textarea></textarea></p><p></p></div>';
+    var json =html2json(html);
+		console.log(json);
+    var htmlback = json2html(json);
+	console.log(htmlback);
+	
+	
+    </script>
+  </body>
+</html>
